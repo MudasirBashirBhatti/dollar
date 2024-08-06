@@ -1,0 +1,34 @@
+.mainContainer {
+    padding: 0em 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0em;
+}
+
+.threeCategoriesContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.allPromptsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1024px) {
+    .mainContainer {
+        padding: 0px 32px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .mainContainer {
+        padding: 0px 14px;
+    }
+}

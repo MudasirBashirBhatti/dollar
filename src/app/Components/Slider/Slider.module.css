@@ -1,0 +1,64 @@
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.sliderWrapper {
+    position: relative;
+}
+
+.sliderWrapper .slideButton {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    width: 70px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000000c4;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.sliderWrapper .slideButton:hover {
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.sliderWrapper .slideButton#prevSlide {
+    left: 0px;
+    border-radius: 0px 20px 20px 0px;
+    display: none;
+}
+
+.sliderWrapper .slideButton#nextSlide {
+    border-radius: 20px 0px 0px 20px;
+    right: 0px;
+}
+
+.sliderWrapper .imageList {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 18px;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.sliderWrapper .imageList::-webkit-scrollbar {
+    display: none;
+}
+
+.imageItem {
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

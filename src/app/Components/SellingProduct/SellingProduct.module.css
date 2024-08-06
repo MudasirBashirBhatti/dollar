@@ -1,0 +1,15 @@
+.mainContainer {
+    display: flex;
+    gap: 2em;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.mainText {
+    margin: 1em 0em 1em;
+    line-height: 2em;
+    font-size: 14px;
+}

@@ -1,0 +1,21 @@
+.fieldContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: .5em 0em;
+    font-size: 12px;
+}
+
+.fieldTitle {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fieldDescription {
+    color: var(--textClr);
+    opacity: .8;
+}
+
+.fieldDescription a {
+    color: var(--textClr);
+}

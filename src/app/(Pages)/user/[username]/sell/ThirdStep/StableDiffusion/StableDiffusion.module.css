@@ -1,0 +1,31 @@
+.diffusionContainer {
+    width: 50%;
+    min-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media screen and (max-width:768px) {
+    .diffusionContainer {
+        width: 100%;
+        min-width: 100%;
+    }
+}

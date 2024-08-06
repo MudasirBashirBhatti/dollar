@@ -1,0 +1,166 @@
+.mainContainer {
+    padding: 1em 8em 4em;
+}
+
+.bannerOuterContainer {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* userLogo */
+.userLogo {
+    position: absolute;
+    bottom: -60px;
+    left: 30px;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.logoImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* follow button */
+.followBtn {
+    position: absolute;
+    bottom: -36px;
+    right: 0px;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    outline: none;
+}
+
+.followBtn:hover {
+    opacity: .8;
+}
+
+.profileWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* profile_wrapper */
+.userNameLinks {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 5em;
+}
+
+
+.socialIcons {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.socialIcons a {
+    color: var(--textClr);
+    display: flex;
+    align-items: center;
+}
+
+.socialIcons a:hover {
+    opacity: .7;
+}
+
+/* profile bio */
+.profileBio {
+    font-size: 14px;
+}
+
+
+.createPrompt a {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: var(--tertiaryClr);
+    font-size: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+    color: var(--textClr);
+}
+
+.createPrompt a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createPromptIcon {
+    font-size: 24px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:1024px) {
+    .mainContainer {
+        padding: 1em 4em 4em;
+    }
+
+}
+
+@media screen and (max-width:788px) {
+    .mainContainer {
+        padding: 1em 2em 2em;
+    }
+
+    .userNameLinks {
+        margin-top: 3em;
+    }
+
+    .banner {
+        height: 100px;
+    }
+
+    .userLogo {
+        bottom: -29px;
+        left: 19px;
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .mainContainer {
+        padding: 1em 14px 4em;
+    }
+}

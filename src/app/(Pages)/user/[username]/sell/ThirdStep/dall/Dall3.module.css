@@ -1,0 +1,45 @@
+.parentContainer {
+    width: 50%;
+    min-width: 600px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.select {
+    background-color: var(--tertiaryClr);
+    width: 150px;
+    border-radius: 4px;
+    margin: 4px 0px 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 8px;
+    color: var(--textClr);
+}
+
+.uploadImage {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 16px;
+    cursor: pointer;
+    vertical-align: top;
+    margin: 4px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nextBtn {
+    margin: 1em 0em 1em;
+}
+
+@media screen and (max-width:658px) {
+    .parentContainer {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,60 @@
+.parentContainer {
+    margin: 2em auto;
+    width: 850px;
+    padding: 16px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainHeading {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.subHeading {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.mainTxt {
+    font-size: 14px;
+}
+
+.ul {
+    padding: 14px;
+    padding-left: 32px;
+}
+
+@media screen and (max-width:1024px) {
+    .parentContainer {
+        padding: 0px 32px;
+        margin: 32px auto;
+        gap: 16px;
+    }
+}
+
+
+@media screen and (max-width:846px) {
+    .parentContainer {
+        width: 100%;
+        margin: 0px auto;
+        padding: 32px;
+    }
+
+    .mainHeading {
+        font-size: 24px;
+    }
+
+    .subHeading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .parentContainer {
+        padding: 14px;
+        margin: 0px auto;
+    }
+}

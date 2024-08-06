@@ -1,0 +1,27 @@
+.active {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--buttonGradient);
+    border: none;
+    color: var(--textClr);
+    width: fit-content;
+    transition: var(--transition);
+}
+
+.inActive {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--tertiaryClr);
+    border: none;
+    color: var(--textClr);
+    width: fit-content;
+    transition: var(--transition);
+}
+
+.inActive:hover {
+    opacity: .8;
+}
+
+.gradient:hover {
+    opacity: .8;
+}

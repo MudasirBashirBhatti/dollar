@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.stepsPercentage {
+    position: relative;
+    height: 4px;
+    width: 90%;
+    background: var(--tertiaryClr);
+    border-radius: 50px;
+}
+
+.realPercentage {
+    position: absolute;
+    background: var(--textClr);
+    height: 4px;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.stepCounter {
+    font-size: 14px;
+    width: 70px;
+}
+
+.backBtn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}

@@ -1,0 +1,29 @@
+.bordered {
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--textClr);
+    color: var(--textClr);
+    width: fit-content;
+    transition: var(--transition);
+}
+
+.gradient {
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: var(--buttonGradient);
+    border: 1px solid transparent;
+    color: var(--textClr);
+    width: fit-content;
+    transition: var(--transition);
+}
+
+.bordered:hover {
+    opacity: .8;
+}
+
+.gradient:hover {
+    opacity: .8;
+}

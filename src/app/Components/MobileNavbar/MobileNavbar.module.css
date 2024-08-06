@@ -1,0 +1,91 @@
+.parentContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--primaryClr);
+    z-index: 10000;
+    padding: 1em 1em;
+    transition: .5s;
+}
+
+/*header content*/
+.headerContent {
+    padding: 1em;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.crossIcon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.explore {
+    opacity: .7;
+}
+
+/* categories styling */
+.mainCategories {
+    font-weight: 500;
+    padding-bottom: 24px;
+    font-size: 18px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.subCategoryHeading {
+    margin-left: 1em;
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.innerCategories {
+    font-size: 14px;
+    margin-left: 2em;
+    padding-bottom: 12px;
+}
+
+/* pagesLinkContainer */
+.pagesLinkContainer {
+    margin-top: 2em;
+}
+
+.general,
+.explore {
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    opacity: .7;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: var(--textClr);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    width: fit-content;
+}
+
+.bottomIcon {
+    transition: var(--transition);
+}

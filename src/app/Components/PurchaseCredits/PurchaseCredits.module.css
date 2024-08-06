@@ -1,0 +1,108 @@
+.purcaseCreditsContainer {
+    width: 800px;
+    height: 700px;
+    border-radius: 8px;
+    background-color: var(--secondryClr);
+    overflow: hidden;
+}
+
+.header {
+    background: var(--tertiaryClr);
+    padding: .5em 1em;
+    text-align: right;
+    box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, .15);
+}
+
+.crossIcon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* content section */
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 24px;
+}
+
+.mainHeading {
+    margin-top: 14px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.subHeading span {
+    font-weight: 600;
+}
+
+/* top up container */
+.topUpContainer {
+    background: var(--textGradient);
+    width: 500px;
+    height: 70px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.innerContainer {
+    position: absolute;
+    padding: 1em;
+    background: var(--primaryClr);
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    transform: scale(.8);
+}
+
+/* selection button */
+.savings {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+    background: var(--primaryClr);
+    gap: 8px;
+    padding: .8em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.payYearlyBtn,
+.payMonthlyBtn {
+    text-align: center;
+    flex: 1;
+    z-index: 1;
+}
+
+.savings span {
+    background: white;
+    position: absolute;
+    color: var(--primaryClr);
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    z-index: 0;
+    /* transform: translateX(100%); */
+}
+
+.plansContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}

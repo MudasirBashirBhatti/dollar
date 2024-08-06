@@ -1,0 +1,235 @@
+.mainContainer {
+    padding: 32px 64px;
+}
+
+.bannerOuterContainer {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* userLogo */
+.userLogo {
+    position: absolute;
+    bottom: -60px;
+    left: 30px;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.logoImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* follow button */
+.followBtn {
+    position: absolute;
+    bottom: -36px;
+    right: 0px;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    outline: none;
+}
+
+.followBtn:hover {
+    opacity: .8;
+}
+
+.profileWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* profile_wrapper */
+.userNameLinks {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 5em;
+}
+
+.userName {
+    font-weight: 600;
+}
+
+
+.socialIcons {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.socialIcons a {
+    color: var(--textClr);
+    display: flex;
+    align-items: center;
+}
+
+.socialIcons a:hover {
+    opacity: .7;
+}
+
+/* profile bio */
+.profileBio {
+    font-size: 14px;
+}
+
+/* userStats */
+.userStats {
+    display: flex;
+    font-size: 12px;
+    gap: 24px;
+    align-items: center;
+}
+
+.stats,
+.successBadge,
+.profileSubDetails {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+
+.successBadge {
+    color: #0e6245;
+    background-color: #cbf4c9;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.profileSubDetail {
+    font-size: 14px;
+}
+
+/* models wrapper */
+.modelsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* single model */
+.singleModel {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--cardHoverClr);
+    padding: 2px 4px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+/* profile reviews */
+.profileReviews {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 16px;
+}
+
+/* rating container */
+.ratingContainer {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.starsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.reviewCount span {
+    border-bottom: 1px solid var(--textClr);
+}
+
+/* followers container */
+.numFollows {
+    font-weight: 600;
+}
+
+.numFollows span {
+    opacity: .7;
+    font-weight: normal;
+}
+
+.promptsWrapper {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:1024px) {
+    .mainContainer {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width:788px) {
+    .banner {
+        height: 100px;
+    }
+
+    .userLogo {
+        bottom: -29px;
+        left: 19px;
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .userNameLinks {
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .mainContainer {
+        padding: 14px;
+    }
+
+    .userStats {
+        flex-direction: column;
+        gap: 12px;
+        align-items: start;
+    }
+
+    .promptsWrapper {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,32 @@
+.SinglePromptContainer {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.SinglePromptContainer:hover {
+    background-color: var(--cardHoverClr);
+}
+
+.content {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.counting,
+.title {
+    font-size: 16px;
+}
+
+.promptName,
+.price {
+    font-size: 14px;
+    opacity: .7;
+}

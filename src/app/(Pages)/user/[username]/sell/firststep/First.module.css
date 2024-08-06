@@ -1,0 +1,34 @@
+.mainContainer {
+    display: flex;
+    gap: 2em;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.mainText {
+    margin: 1em 0em 1em;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+.rightCol {
+    display: inline-block;
+    width: 600px;
+    height: 337px;
+}
+
+@media screen and (max-width:1024px) {
+    .mainContainer {
+        flex-direction: column-reverse;
+    }
+
+    .rightCol {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+}

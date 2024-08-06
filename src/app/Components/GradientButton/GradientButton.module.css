@@ -1,0 +1,13 @@
+.gradientBtn {
+    background: var(--buttonGradient);
+    padding: 9px 16px;
+    color: var(--textClr);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.gradientBtn:hover {
+    background: var(--buttonGradientHover);
+}

@@ -1,0 +1,52 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 64px;
+    gap: 20px;
+}
+
+.filterComponent {
+    display: block;
+}
+
+.mobileFilterComponent {
+    display: none;
+}
+
+.leftContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1024px) {
+    .mainContainer {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .filterComponent {
+        display: none;
+    }
+
+    .mobileFilterComponent {
+        display: block;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .mainContainer {
+        padding: 16px;
+    }
+}

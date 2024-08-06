@@ -1,0 +1,14 @@
+.borderBtn {
+    background: transparent;
+    padding: 9px 16px;
+    color: var(--textClr);
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--textClr);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.borderBtn:hover {
+    background: rgba(0, 0, 0, 0.24);
+}

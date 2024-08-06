@@ -1,0 +1,15 @@
+.parentContainer {
+    padding: 64px;
+}
+
+@media screen and (max-width:1024px) {
+    .parentContainer {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .parentContainer {
+        padding: 16px 14px;
+    }
+}

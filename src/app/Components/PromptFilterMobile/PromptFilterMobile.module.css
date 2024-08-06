@@ -1,0 +1,12 @@
+.mainContainer {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+    margin: 12px 0px 24px;
+}
+
+.mainContainer::-webkit-scrollbar {
+    display: none;
+}

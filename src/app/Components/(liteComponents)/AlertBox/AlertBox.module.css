@@ -1,0 +1,49 @@
+.parentContainer {
+    width: 360px;
+    background-color: var(--secondryClr);
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    width: 100%;
+    background: var(--tertiaryClr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.cancel {
+    color: var(--textClr);
+    transform: rotate(45deg);
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.infoContainer {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.borderRule {
+    width: 100%;
+    height: 1px;
+    background: var(--customBorder);
+    margin: 12px 0px;
+}
+
+.btnsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,203 @@
+.mainContainer {
+    display: flex;
+    gap: 36px;
+    padding: 64px;
+}
+
+.imageGradient {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    height: 200px;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    font-size: 12px;
+}
+
+.favouriteIcon {
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.favouriteIcon:hover {
+    color: yellow;
+}
+
+.gradient {
+    background: radial-gradient(ellipse, rgba(2, 0, 36, 0) 0%, var(--primaryClr) 75%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    z-index: 3;
+}
+
+.imageGradient img {
+    width: 100%;
+    height: auto;
+    z-index: -3;
+}
+
+.heading {
+    margin-top: 3em;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.smallImageSection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.verifiedInfo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.designerInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.designerSocialHandle {
+    color: var(--primaryClr);
+    padding: 4px;
+    background-color: var(--textClr);
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 12px;
+}
+
+/* price */
+.price {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.price span {
+    font-size: 14px;
+}
+
+.promptDescription {
+    font-size: 14px;
+}
+
+.getPromptContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cartContainer {
+    padding: 16px;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    font-size: 24px;
+}
+
+.purchasingBenefits {
+    width: 700px;
+    font-size: 12px;
+}
+
+.timeStamp {
+    font-size: 12px;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 53%;
+    position: relative;
+}
+
+.rightContainer {
+    width: 47%;
+    min-width: 400px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px 8px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContainer::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+.rightContainer::-webkit-scrollbar-thumb {
+    background: var(--textClr);
+}
+
+@media screen and (max-width:1024px) {
+
+    .mainContainer {
+        flex-direction: column;
+        padding: 32px;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .rightContainer {
+        width: 100%;
+        min-width: initial;
+        height: 210px;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    .rightContainer::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .purchasingBenefits {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .mainContainer {
+        padding: 14px 14px;
+    }
+
+    .smallImageSection {
+        gap: 12px;
+        justify-content: space-between;
+    }
+}

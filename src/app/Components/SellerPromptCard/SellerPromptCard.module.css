@@ -1,0 +1,111 @@
+.featuredCardContainer {
+    width: 250px;
+    height: 240px;
+    position: relative;
+    background: var(--tertiaryClr);
+    border: 1px solid var(--customBorder);
+    color: var(--textClr);
+}
+
+.image {
+    z-index: 1;
+    height: 140px;
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--tertiaryClr);
+    opacity: .7px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.optionsContainer {
+    padding: 8px;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.infoText {
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 28px;
+    color: var(--textClr);
+    cursor: pointer;
+}
+
+.shareIconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    width: 25px;
+    height: 25px;
+    background: var(--textClr);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shareIcon {
+    font-size: 16px;
+}
+
+.dropdown {
+    position: absolute;
+    bottom: -78px;
+    right: 0px;
+    background-color: var(--tertiaryClr);
+    padding: 8px;
+    list-style: none;
+    width: 108px;
+    border: 1px solid var(--customBorder);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: var(--transition);
+    transform-origin: top right;
+    z-index: 1;
+}
+
+.dropdown li:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown li:nth-child(3):hover {
+    color: yellow;
+}
+
+.dropdown li a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown li a {
+    color: var(--textClr);
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    color: yellow;
+}

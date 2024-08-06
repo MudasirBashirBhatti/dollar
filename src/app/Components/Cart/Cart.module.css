@@ -1,0 +1,218 @@
+.container {
+    width: 480px;
+    height: 100vh;
+    background: var(--tertiaryClr);
+    position: fixed;
+    z-index: 2000;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: .3s;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.header .icon:nth-child(2) {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.header .icon:nth-child(2):hover {
+    transform: scale(1.3);
+    animation: iconAnimation .7s linear;
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: scale(1.1) rotate(50deg);
+    }
+
+    70% {
+        transform: scale(1.2) rotate(-50deg);
+    }
+
+    100% {
+        transform: scale(1.3) rotate(0deg);
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: var(--textClr);
+    opacity: .7;
+}
+
+/* cartItemsContainer */
+.cartItemsContainer {
+    height: 200px;
+    overflow-y: scroll;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding-right: 16px;
+}
+
+.cartItemsContainer::-webkit-scrollbar {
+    width: 6px;
+    background: var(--secondryClr);
+    border-radius: 50px;
+}
+
+.cartItemsContainer::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 50px;
+}
+
+.singleCartItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* discount plan container */
+.discountContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.infoText {
+    font-size: 14px;
+}
+
+.message {
+    font-size: 12px;
+}
+
+/* discount wrapper */
+.discountBarWrapper {
+    width: 100%;
+    height: 4px;
+    background: var(--textClr);
+    opacity: .3;
+    border-radius: 50px;
+    margin: 48px 0px;
+}
+
+.discountBar {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.percentageCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--textClr);
+    font-size: 9px;
+    background-color: var(--tertiaryClr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.percentageCircle:nth-child(1) {
+    left: 15%;
+}
+
+.percentageCircle:nth-child(2) {
+    left: 35%;
+}
+
+.percentageCircle:nth-child(3) {
+    left: 60%;
+}
+
+.percentageCircle:nth-child(4) {
+    left: 100%;
+}
+
+/* total wrapper */
+.itemCounter {
+    font-size: 14px;
+}
+
+.itemCounter span {
+    font-weight: 700;
+}
+
+.pricingContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.price {
+    position: relative;
+    width: fit-content;
+}
+
+.singlePrice,
+.originalPrice {
+    font-size: 32px;
+    color: var(--textClr);
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.originalPrice {
+    opacity: 1 !important;
+}
+
+.singlePrice span,
+.originalPrice span {
+    font-size: 14px;
+}
+
+.strikeThrough {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.priceTag {
+    padding: 2px 4px;
+    font-size: 12px;
+    background: var(--textClr);
+    color: var(--tertiaryClr);
+    height: fit-content;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:870px) {
+    .discountBarWrapper {
+        margin: 16px 0px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .container {
+        width: 100%;
+    }
+}

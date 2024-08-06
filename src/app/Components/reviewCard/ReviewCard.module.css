@@ -1,0 +1,43 @@
+.featuredCardContainer {
+    width: 250px;
+    height: 240px;
+    position: relative;
+    background: var(--tertiaryClr);
+    border: 1px solid var(--customBorder);
+    color: var(--textClr);
+}
+
+.image {
+    z-index: 1;
+    height: 140px;
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--tertiaryClr);
+    opacity: .7px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.optionsContainer {
+    padding: 8px;
+}
+
+.reviewBtn {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.infoText {
+    font-size: 14px;
+}

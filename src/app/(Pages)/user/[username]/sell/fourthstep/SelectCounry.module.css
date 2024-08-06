@@ -1,0 +1,33 @@
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    font-size: 14px;
+    width: 550px;
+}
+
+.btnContainer {
+    width: 200px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fieldHelp {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.fieldHelp a {
+    color: var(--textClr);
+}
+
+@media screen and (max-width:658px) {
+    .parentContainer {
+        width: 100%;
+    }
+}

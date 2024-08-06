@@ -1,0 +1,10 @@
+.select {
+    background-color: var(--tertiaryClr);
+    border-radius: 4px;
+    margin: 4px 0px 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 8px;
+    color: var(--textClr);
+}

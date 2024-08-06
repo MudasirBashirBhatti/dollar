@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background: var(--textGradient);
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: var(--primaryClr);
+    border-radius: 8px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    gap: 8px;
+}
+
+/* type */
+.type {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscriptionTierContent {
+    border: 1px solid var(--tertiaryClr);
+    opacity: .7;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price span {
+    font-size: 32px;
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+.creditPerMonth {
+    text-align: center;
+}
+
+.subscriptionTier {
+    text-align: center;
+}
+
+.border {
+    height: 1px;
+    background: var(--tertiaryClr);
+    opacity: .6;
+}

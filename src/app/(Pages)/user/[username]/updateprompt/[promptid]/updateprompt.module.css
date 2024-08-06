@@ -1,0 +1,61 @@
+.parentContainer {
+    width: 50%;
+    padding: 32px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.infoContainer {
+    line-height: 2.2em;
+}
+
+.textInput {
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--tertiaryClr);
+    width: 600px;
+    border: none;
+    color: white;
+    caret-color: white;
+    outline: none;
+    resize: vertical;
+    margin-bottom: 2.4em;
+}
+
+.textInput::placeholder {
+    color: var(--textClr);
+    opacity: .6;
+}
+
+.pricingContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+@media screen and (max-width:1024px) {
+    .parentContainer {
+        padding: 32px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:792px) {
+    .textInput {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .parentContainer {
+        padding: 16px;
+        width: 100%;
+        gap: 12px;
+    }
+}

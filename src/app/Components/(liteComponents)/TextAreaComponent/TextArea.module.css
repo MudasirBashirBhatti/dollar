@@ -1,0 +1,27 @@
+.textInput {
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--tertiaryClr);
+    width: 100%;
+    border: none;
+    color: var(--textClr);
+    caret-color: --textClr;
+    outline: none;
+    resize: vertical;
+    margin-bottom: 2.4em;
+}
+
+.textInput:focus {
+    outline: 3px solid var(--activeClr);
+}
+
+.textInput::placeholder {
+    color: var(--textClr);
+    opacity: .6;
+}
+
+@media screen and (max-width:792px) {
+    .textInput {
+        width: 100%;
+    }
+}

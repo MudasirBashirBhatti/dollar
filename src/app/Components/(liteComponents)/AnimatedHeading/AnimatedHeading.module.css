@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 16px;
+    /* background-color: blue; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 500;
+}
+
+.border {
+    height: 1px;
+    background-color: var(--textClr);
+    width: 100%;
+    margin: 8px 0px;
+}
+
+.exploreAll {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    position: absolute;
+    left: 0px;
+    /* left: 137px; */
+    z-index: -1;
+    width: 90px;
+    display: none;
+}
+
+.exploreAll .icon {
+    font-size: 14px;
+}

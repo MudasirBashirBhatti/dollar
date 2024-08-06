@@ -1,0 +1,6 @@
+.container {
+    width: 100%;
+    padding: 1em;
+    background: var(--secondryClr);
+    border-radius: 10px;
+}

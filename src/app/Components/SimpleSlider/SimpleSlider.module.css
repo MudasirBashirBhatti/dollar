@@ -1,0 +1,41 @@
+.sliderContainer {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.sliderContainer img {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    z-index: 500;
+    bottom: 16px;
+    left: 16px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.subHeading {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.highligtedText {
+    font-size: 18px;
+    background: var(--textGradient);
+    font-weight: 600;
+    background-clip: text;
+    color: transparent;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 1em;
+    margin-top: 16px;
+}

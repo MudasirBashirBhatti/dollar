@@ -1,0 +1,45 @@
+.checkBoxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.checkInput {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkInput::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--tertiaryClr);
+    transition: var(--transition);
+}
+
+.checkInput::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--primaryClr);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%) rotate(-45deg) scale(0);
+    transition: var(--transition);
+}
+
+.checkInput:checked:after {
+    transform: translate(-50%, -70%) rotate(-45deg) scale(1);
+}
+
+.checkInput:checked::before {
+    background: var(--textClr);
+}

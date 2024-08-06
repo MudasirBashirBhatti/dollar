@@ -1,0 +1,33 @@
+.parentContainer {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputTextField {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nextBtnContainer {
+    width: 200px;
+}
+
+/* media queries */
+@media screen and (max-width:768px) {
+    .parentContainer {
+        width: 100%;
+    }
+}
